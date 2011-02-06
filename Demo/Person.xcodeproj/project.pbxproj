@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B28CC08712FF59BA000677BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28CC08612FF59BA000677BE /* UIKit.framework */; };
+		B28CC08912FF59BA000677BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28CC08812FF59BA000677BE /* Foundation.framework */; };
+		B28CC08B12FF59BA000677BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28CC08A12FF59BA000677BE /* CoreGraphics.framework */; };
+		B28CC0BB12FF5A1C000677BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B28CC0B512FF5A1C000677BE /* main.m */; };
+		B28CC0CB12FF5BAD000677BE /* SSEditPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28CC0C412FF5BAD000677BE /* SSEditPersonViewController.m */; };
+		B28CC0CC12FF5BAD000677BE /* SSPersonFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = B28CC0C612FF5BAD000677BE /* SSPersonFooterView.m */; };
+		B28CC0CD12FF5BAD000677BE /* SSPersonHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B28CC0C812FF5BAD000677BE /* SSPersonHeaderView.m */; };
+		B28CC0CE12FF5BAD000677BE /* SSPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28CC0CA12FF5BAD000677BE /* SSPersonViewController.m */; };
+		B28CC0D112FF5BE4000677BE /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28CC0CF12FF5BE4000677BE /* AddressBook.framework */; };
+		B28CC0D212FF5BE4000677BE /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28CC0D012FF5BE4000677BE /* AddressBookUI.framework */; };
+		B28CC0D412FF5C04000677BE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B28CC0D312FF5C04000677BE /* QuartzCore.framework */; };
+		B28CC0D712FF5C30000677BE /* SSPersonAddressTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B28CC0D612FF5C30000677BE /* SSPersonAddressTableViewCell.m */; };
+		B28CC0EF12FF5D3B000677BE /* PersonAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B28CC0EC12FF5D3B000677BE /* PersonAppDelegate.m */; };
+		B28CC0F012FF5D3B000677BE /* PVDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28CC0EE12FF5D3B000677BE /* PVDemoViewController.m */; };
+		B28CC0F612FF5E34000677BE /* ABPictureOrganization.png in Resources */ = {isa = PBXBuildFile; fileRef = B28CC0F212FF5E34000677BE /* ABPictureOrganization.png */; };
+		B28CC0F712FF5E34000677BE /* ABPictureOrganization@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B28CC0F312FF5E34000677BE /* ABPictureOrganization@2x.png */; };
+		B28CC0F812FF5E34000677BE /* ABPicturePerson.png in Resources */ = {isa = PBXBuildFile; fileRef = B28CC0F412FF5E34000677BE /* ABPicturePerson.png */; };
+		B28CC0F912FF5E34000677BE /* ABPicturePerson@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B28CC0F512FF5E34000677BE /* ABPicturePerson@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B28CC08212FF59BA000677BE /* Person.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Person.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28CC08612FF59BA000677BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B28CC08812FF59BA000677BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B28CC08A12FF59BA000677BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B28CC0B512FF5A1C000677BE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B28CC0B612FF5A1C000677BE /* Person-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person-Prefix.pch"; sourceTree = "<group>"; };
+		B28CC0BA12FF5A1C000677BE /* Person-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Person-Info.plist"; sourceTree = "<group>"; };
+		B28CC0C312FF5BAD000677BE /* SSEditPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSEditPersonViewController.h; path = ../../SSEditPersonViewController.h; sourceTree = "<group>"; };
+		B28CC0C412FF5BAD000677BE /* SSEditPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSEditPersonViewController.m; path = ../../SSEditPersonViewController.m; sourceTree = "<group>"; };
+		B28CC0C512FF5BAD000677BE /* SSPersonFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPersonFooterView.h; path = ../../SSPersonFooterView.h; sourceTree = "<group>"; };
+		B28CC0C612FF5BAD000677BE /* SSPersonFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPersonFooterView.m; path = ../../SSPersonFooterView.m; sourceTree = "<group>"; };
+		B28CC0C712FF5BAD000677BE /* SSPersonHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPersonHeaderView.h; path = ../../SSPersonHeaderView.h; sourceTree = "<group>"; };
+		B28CC0C812FF5BAD000677BE /* SSPersonHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPersonHeaderView.m; path = ../../SSPersonHeaderView.m; sourceTree = "<group>"; };
+		B28CC0C912FF5BAD000677BE /* SSPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPersonViewController.h; path = ../../SSPersonViewController.h; sourceTree = "<group>"; };
+		B28CC0CA12FF5BAD000677BE /* SSPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPersonViewController.m; path = ../../SSPersonViewController.m; sourceTree = "<group>"; };
+		B28CC0CF12FF5BE4000677BE /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		B28CC0D012FF5BE4000677BE /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		B28CC0D312FF5C04000677BE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B28CC0D512FF5C30000677BE /* SSPersonAddressTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SSPersonAddressTableViewCell.h; path = ../../SSPersonAddressTableViewCell.h; sourceTree = "<group>"; };
+		B28CC0D612FF5C30000677BE /* SSPersonAddressTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SSPersonAddressTableViewCell.m; path = ../../SSPersonAddressTableViewCell.m; sourceTree = "<group>"; };
+		B28CC0EB12FF5D3B000677BE /* PersonAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonAppDelegate.h; sourceTree = "<group>"; };
+		B28CC0EC12FF5D3B000677BE /* PersonAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonAppDelegate.m; sourceTree = "<group>"; };
+		B28CC0ED12FF5D3B000677BE /* PVDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVDemoViewController.h; sourceTree = "<group>"; };
+		B28CC0EE12FF5D3B000677BE /* PVDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVDemoViewController.m; sourceTree = "<group>"; };
+		B28CC0F212FF5E34000677BE /* ABPictureOrganization.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ABPictureOrganization.png; sourceTree = "<group>"; };
+		B28CC0F312FF5E34000677BE /* ABPictureOrganization@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ABPictureOrganization@2x.png"; sourceTree = "<group>"; };
+		B28CC0F412FF5E34000677BE /* ABPicturePerson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ABPicturePerson.png; sourceTree = "<group>"; };
+		B28CC0F512FF5E34000677BE /* ABPicturePerson@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ABPicturePerson@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B28CC07F12FF59BA000677BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28CC0D412FF5C04000677BE /* QuartzCore.framework in Frameworks */,
+				B28CC0D112FF5BE4000677BE /* AddressBook.framework in Frameworks */,
+				B28CC0D212FF5BE4000677BE /* AddressBookUI.framework in Frameworks */,
+				B28CC08712FF59BA000677BE /* UIKit.framework in Frameworks */,
+				B28CC08912FF59BA000677BE /* Foundation.framework in Frameworks */,
+				B28CC08B12FF59BA000677BE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B28CC07712FF59BA000677BE = {
+			isa = PBXGroup;
+			children = (
+				B28CC0BE12FF5A2D000677BE /* Demo */,
+				B28CC0C212FF5B7E000677BE /* Person View Controller */,
+			);
+			sourceTree = "<group>";
+		};
+		B28CC08312FF59BA000677BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B28CC08212FF59BA000677BE /* Person.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B28CC08512FF59BA000677BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B28CC0D312FF5C04000677BE /* QuartzCore.framework */,
+				B28CC0CF12FF5BE4000677BE /* AddressBook.framework */,
+				B28CC0D012FF5BE4000677BE /* AddressBookUI.framework */,
+				B28CC08612FF59BA000677BE /* UIKit.framework */,
+				B28CC08812FF59BA000677BE /* Foundation.framework */,
+				B28CC08A12FF59BA000677BE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B28CC0B412FF5A1C000677BE /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B28CC0B512FF5A1C000677BE /* main.m */,
+				B28CC0B612FF5A1C000677BE /* Person-Prefix.pch */,
+			);
+			name = "Other Sources";
+			path = "../Other Sources";
+			sourceTree = "<group>";
+		};
+		B28CC0B912FF5A1C000677BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B28CC0BA12FF5A1C000677BE /* Person-Info.plist */,
+			);
+			name = Resources;
+			path = ../Resources;
+			sourceTree = "<group>";
+		};
+		B28CC0BE12FF5A2D000677BE /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B28CC0EA12FF5D3B000677BE /* Classes */,
+				B28CC0B412FF5A1C000677BE /* Other Sources */,
+				B28CC0B912FF5A1C000677BE /* Resources */,
+				B28CC08312FF59BA000677BE /* Products */,
+				B28CC08512FF59BA000677BE /* Frameworks */,
+			);
+			name = Demo;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B28CC0C212FF5B7E000677BE /* Person View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B28CC0F112FF5E34000677BE /* Images */,
+				B28CC0D512FF5C30000677BE /* SSPersonAddressTableViewCell.h */,
+				B28CC0D612FF5C30000677BE /* SSPersonAddressTableViewCell.m */,
+				B28CC0C312FF5BAD000677BE /* SSEditPersonViewController.h */,
+				B28CC0C412FF5BAD000677BE /* SSEditPersonViewController.m */,
+				B28CC0C512FF5BAD000677BE /* SSPersonFooterView.h */,
+				B28CC0C612FF5BAD000677BE /* SSPersonFooterView.m */,
+				B28CC0C712FF5BAD000677BE /* SSPersonHeaderView.h */,
+				B28CC0C812FF5BAD000677BE /* SSPersonHeaderView.m */,
+				B28CC0C912FF5BAD000677BE /* SSPersonViewController.h */,
+				B28CC0CA12FF5BAD000677BE /* SSPersonViewController.m */,
+			);
+			name = "Person View Controller";
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B28CC0EA12FF5D3B000677BE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B28CC0EB12FF5D3B000677BE /* PersonAppDelegate.h */,
+				B28CC0EC12FF5D3B000677BE /* PersonAppDelegate.m */,
+				B28CC0ED12FF5D3B000677BE /* PVDemoViewController.h */,
+				B28CC0EE12FF5D3B000677BE /* PVDemoViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B28CC0F112FF5E34000677BE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B28CC0F212FF5E34000677BE /* ABPictureOrganization.png */,
+				B28CC0F312FF5E34000677BE /* ABPictureOrganization@2x.png */,
+				B28CC0F412FF5E34000677BE /* ABPicturePerson.png */,
+				B28CC0F512FF5E34000677BE /* ABPicturePerson@2x.png */,
+			);
+			name = Images;
+			path = ../../Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B28CC08112FF59BA000677BE /* Person */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B28CC0A812FF59BA000677BE /* Build configuration list for PBXNativeTarget "Person" */;
+			buildPhases = (
+				B28CC07E12FF59BA000677BE /* Sources */,
+				B28CC07F12FF59BA000677BE /* Frameworks */,
+				B28CC08012FF59BA000677BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Person;
+			productName = Person;
+			productReference = B28CC08212FF59BA000677BE /* Person.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B28CC07912FF59BA000677BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Sam Soffes";
+			};
+			buildConfigurationList = B28CC07C12FF59BA000677BE /* Build configuration list for PBXProject "Person" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B28CC07712FF59BA000677BE;
+			productRefGroup = B28CC08312FF59BA000677BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B28CC08112FF59BA000677BE /* Person */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B28CC08012FF59BA000677BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28CC0F612FF5E34000677BE /* ABPictureOrganization.png in Resources */,
+				B28CC0F712FF5E34000677BE /* ABPictureOrganization@2x.png in Resources */,
+				B28CC0F812FF5E34000677BE /* ABPicturePerson.png in Resources */,
+				B28CC0F912FF5E34000677BE /* ABPicturePerson@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B28CC07E12FF59BA000677BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B28CC0BB12FF5A1C000677BE /* main.m in Sources */,
+				B28CC0CB12FF5BAD000677BE /* SSEditPersonViewController.m in Sources */,
+				B28CC0CC12FF5BAD000677BE /* SSPersonFooterView.m in Sources */,
+				B28CC0CD12FF5BAD000677BE /* SSPersonHeaderView.m in Sources */,
+				B28CC0CE12FF5BAD000677BE /* SSPersonViewController.m in Sources */,
+				B28CC0D712FF5C30000677BE /* SSPersonAddressTableViewCell.m in Sources */,
+				B28CC0EF12FF5D3B000677BE /* PersonAppDelegate.m in Sources */,
+				B28CC0F012FF5D3B000677BE /* PVDemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B28CC0A612FF59BA000677BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B28CC0A712FF59BA000677BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B28CC0A912FF59BA000677BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Other Sources/Person-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Resources/Person-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B28CC0AA12FF59BA000677BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Other Sources/Person-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "Resources/Person-Info.plist";
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B28CC07C12FF59BA000677BE /* Build configuration list for PBXProject "Person" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28CC0A612FF59BA000677BE /* Debug */,
+				B28CC0A712FF59BA000677BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B28CC0A812FF59BA000677BE /* Build configuration list for PBXNativeTarget "Person" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B28CC0A912FF59BA000677BE /* Debug */,
+				B28CC0AA12FF59BA000677BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B28CC07912FF59BA000677BE /* Project object */;
+}
