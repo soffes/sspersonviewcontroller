@@ -42,8 +42,8 @@
 	[super setEditing:editing animated:animated];
 	if (editing == NO) {
 		ABAddressBookSave(self.addressBook, nil);
-		
-		[self.delegate dismissEditView];
+
+        [self.delegate dismissEditViewControllerWithData:self.displayedPerson];
 	}
 }
 

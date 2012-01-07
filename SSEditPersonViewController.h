@@ -10,7 +10,7 @@
 
 @protocol SSEditPersonViewControllerDelegate
 
-- (void)dismissEditView;
+- (void)dismissEditViewControllerWithData:(id)data;
 
 @end
 

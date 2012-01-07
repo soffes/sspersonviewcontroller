@@ -103,7 +103,7 @@ NSInteger kSSPersonViewControllerDeleteActionSheetTag = 987;
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	
+    
 	self.title = @"Info";
 	self.tableView.tableHeaderView = _headerView;
 	
@@ -119,7 +119,8 @@ NSInteger kSSPersonViewControllerDeleteActionSheetTag = 987;
 
 - (void)editPerson:(id)sender {
 	SSEditPersonViewController *viewController = [[SSEditPersonViewController alloc] init];
-	viewController.displayedPerson = self.displayedPerson;
+	viewController.delegate = self;
+    viewController.displayedPerson = self.displayedPerson;
 	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
 	[viewController release];
 	[self.navigationController presentModalViewController:navigationController animated:YES];
@@ -457,9 +458,10 @@ NSInteger kSSPersonViewControllerDeleteActionSheetTag = 987;
 
 #pragma mark SSEditPersonViewControllerDelegate
 
-- (void)dismissEditView; {
-    [self.tableView reloadData];
-    [self dismissModalViewControllerAnimated:YES];
+- (void)dismissEditViewControllerWithData:(id)data {
+    [self setDisplayedPerson:(ABRecordRef)data];
+    [_headerView setNeedsDisplay];
+    [self.parentViewController dismissModalViewControllerAnimated:YES];
 }
 
 @end
