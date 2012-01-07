@@ -10,6 +10,8 @@
 
 @implementation SSEditPersonViewController
 
+@synthesize delegate;
+
 #pragma mark NSObject
 
 - (id)init {
@@ -41,7 +43,7 @@
 	if (editing == NO) {
 		ABAddressBookSave(self.addressBook, nil);
 		
-		[self dismissModalViewControllerAnimated:YES];
+		[self.delegate dismissEditView];
 	}
 }
 

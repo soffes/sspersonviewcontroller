@@ -454,4 +454,12 @@ NSInteger kSSPersonViewControllerDeleteActionSheetTag = 987;
 	[self.navigationController popViewControllerAnimated:YES];	
 }
 
+
+#pragma mark SSEditPersonViewControllerDelegate
+
+- (void)dismissEditView; {
+    [self.tableView reloadData];
+    [self dismissModalViewControllerAnimated:YES];
+}
+
 @end

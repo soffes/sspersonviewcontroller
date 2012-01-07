@@ -8,9 +8,17 @@
 
 #import <AddressBookUI/AddressBookUI.h>
 
+@protocol SSEditPersonViewControllerDelegate
+
+- (void)dismissEditView;
+
+@end
+
 @interface SSEditPersonViewController : ABPersonViewController {
 
 }
+
+@property (nonatomic, retain) id<SSEditPersonViewControllerDelegate> delegate;
 
 - (void)cancel:(id)sender;
 
