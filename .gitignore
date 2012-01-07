@@ -8,3 +8,5 @@ xcuserdata
 .sass-cache
 Documentation/temp
 Documentation/Output
+
+Demo/Person.xcodeproj/project.pbxproj

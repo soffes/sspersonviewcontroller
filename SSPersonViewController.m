@@ -313,7 +313,7 @@ NSInteger kSSPersonViewControllerDeleteActionSheetTag = 987;
 					cleanedValue = [cleanedValue stringByReplacingOccurrencesOfString:@"-" withString:@""];
 					cleanedValue = [cleanedValue stringByReplacingOccurrencesOfString:@"(" withString:@""];
 					cleanedValue = [cleanedValue stringByReplacingOccurrencesOfString:@")" withString:@""];
-					urlString = [NSString stringWithFormat:@"tel://%@", value];
+					urlString = [NSString stringWithFormat:@"tel://%@", cleanedValue];
 					break;
 				}
 					
