@@ -26,23 +26,14 @@ NSInteger kSSPersonViewControllerDeleteActionSheetTag = 987;
 
 #pragma mark Class Methods
 
-+ (NSString *)_formatLabel:(NSString *)rawLabel {
-	NSString *label = nil;
++ (NSString *)_formatLabel:(ABMultiValueRef) valuesRef  :(NSInteger) i {
 	
-	// Strip weird wrapper
-	if ([rawLabel length] > 9 && [[rawLabel substringWithRange:NSMakeRange(0, 4)] isEqual:@"_$!<"]) {
-		label = [rawLabel substringWithRange:NSMakeRange(4, [rawLabel length] - 8)];
-	} else {
-		label = [[rawLabel copy] autorelease];
-	}
-	
-	// Lowercase unless iPhone
-	if ([label isEqual:(NSString *)kABPersonPhoneIPhoneLabel] == NO) {
-		label = [label lowercaseString];
-	}
+    CFStringRef locLabel = ABMultiValueCopyLabelAtIndex(valuesRef, i);
+    NSString *label =(NSString*) ABAddressBookCopyLocalizedLabel(locLabel);
 	
 	return label;
 }
+
 
 
 #pragma mark NSObject
@@ -243,9 +234,7 @@ NSInteger kSSPersonViewControllerDeleteActionSheetTag = 987;
 			NSIndexPath *indexPath = [NSIndexPath indexPathForRow:k inSection:_numberOfSections - 1];
 			
 			// Get label
-			NSString *rawLabel = (NSString *)ABMultiValueCopyLabelAtIndex(valuesRef, k);
-			NSString *label = [[self class] _formatLabel:rawLabel];
-			[rawLabel release];
+			NSString *label = [[self class] _formatLabel:valuesRef: k];
 			
 			// Get value
 			NSString *value = (NSString *)ABMultiValueCopyValueAtIndex(valuesRef, k);
@@ -312,7 +301,7 @@ NSInteger kSSPersonViewControllerDeleteActionSheetTag = 987;
 					cleanedValue = [cleanedValue stringByReplacingOccurrencesOfString:@"-" withString:@""];
 					cleanedValue = [cleanedValue stringByReplacingOccurrencesOfString:@"(" withString:@""];
 					cleanedValue = [cleanedValue stringByReplacingOccurrencesOfString:@")" withString:@""];
-					urlString = [NSString stringWithFormat:@"tel://%@", value];
+					urlString = [NSString stringWithFormat:@"tel://%@", cleanedValue];
 					break;
 				}
 					
