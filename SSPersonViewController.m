@@ -30,8 +30,8 @@ NSInteger kSSPersonViewControllerDeleteActionSheetTag = 987;
 	
     CFStringRef locLabel = ABMultiValueCopyLabelAtIndex(valuesRef, i);
     NSString *label =(NSString*) ABAddressBookCopyLocalizedLabel(locLabel);
-	
-	return label;
+    CFRelease(locLabel);	
+    return label;
 }
 
 
