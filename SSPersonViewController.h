@@ -7,13 +7,14 @@
 //
 
 #import <AddressBook/AddressBook.h>
+#import "SSEditPersonViewController.h"
 
 @class SSPersonHeaderView;
 @class SSPersonFooterView;
 
 extern NSInteger kSSPersonViewControllerDeleteActionSheetTag;
 
-@interface SSPersonViewController : UITableViewController <UIActionSheetDelegate> {
+@interface SSPersonViewController : UITableViewController <UIActionSheetDelegate, SSEditPersonViewControllerDelegate> {
 	
 	ABRecordRef _displayedPerson;
 	ABAddressBookRef _addressBook;

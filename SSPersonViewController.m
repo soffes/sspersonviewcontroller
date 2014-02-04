@@ -103,7 +103,7 @@ NSInteger kSSPersonViewControllerDeleteActionSheetTag = 987;
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	
+    
 	self.title = @"Info";
 	self.tableView.tableHeaderView = _headerView;
 	
@@ -119,7 +119,8 @@ NSInteger kSSPersonViewControllerDeleteActionSheetTag = 987;
 
 - (void)editPerson:(id)sender {
 	SSEditPersonViewController *viewController = [[SSEditPersonViewController alloc] init];
-	viewController.displayedPerson = self.displayedPerson;
+	viewController.delegate = self;
+    viewController.displayedPerson = self.displayedPerson;
 	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
 	[viewController release];
 	[self.navigationController presentModalViewController:navigationController animated:YES];
@@ -312,7 +313,7 @@ NSInteger kSSPersonViewControllerDeleteActionSheetTag = 987;
 					cleanedValue = [cleanedValue stringByReplacingOccurrencesOfString:@"-" withString:@""];
 					cleanedValue = [cleanedValue stringByReplacingOccurrencesOfString:@"(" withString:@""];
 					cleanedValue = [cleanedValue stringByReplacingOccurrencesOfString:@")" withString:@""];
-					urlString = [NSString stringWithFormat:@"tel://%@", value];
+					urlString = [NSString stringWithFormat:@"tel://%@", cleanedValue];
 					break;
 				}
 					
@@ -452,6 +453,15 @@ NSInteger kSSPersonViewControllerDeleteActionSheetTag = 987;
 	ABAddressBookRemoveRecord(self.addressBook, self.displayedPerson, nil);
 	ABAddressBookSave(self.addressBook, nil);
 	[self.navigationController popViewControllerAnimated:YES];	
+}
+
+
+#pragma mark SSEditPersonViewControllerDelegate
+
+- (void)dismissEditViewControllerWithData:(id)data {
+    [self setDisplayedPerson:(ABRecordRef)data];
+    [_headerView setNeedsDisplay];
+    [self.parentViewController dismissModalViewControllerAnimated:YES];
 }
 
 @end
